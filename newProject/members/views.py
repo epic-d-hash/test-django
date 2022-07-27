@@ -10,3 +10,10 @@ def index(request):
     """
     template = loader.get_template('secondPage.html')
     return HttpResponse(template.render())
+
+def login_form(request):
+    """
+    Login Form
+    """
+    template = loader.get_template('first.html')
+    return HttpResponse(template.render())
